@@ -15,9 +15,10 @@ If you're wondering what should I use to build my application, start by asking w
 
 |I want to build...|then I'll use...|
 |------------------|----------------|
-|a web app         |[.NET Core]((https://docs.microsoft.com/en-us/dotnet/core/))|
-|a native Windows app|[.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)|
-|a mobile Android app|[Xamarin.Android](https://docs.microsoft.com/en-us/xamarin/android/index)|
-|a mobile iOS app|[Xamarin.iOS](https://docs.microsoft.com/en-us/xamarin/ios/index)|
+|an MVC web app         |[.NET Core]((https://docs.microsoft.com/en-us/dotnet/core/))|
+|an web api             |[.NET Core]((https://docs.microsoft.com/en-us/dotnet/core/))|
+|a native Windows app   |[.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)|
+|a mobile Android app   |[Xamarin.Android](https://docs.microsoft.com/en-us/xamarin/android/index)|
+|a mobile iOS app       |[Xamarin.iOS](https://docs.microsoft.com/en-us/xamarin/ios/index)|
 
 All the above frameworks and runtimes adhere to the .NET Standard
