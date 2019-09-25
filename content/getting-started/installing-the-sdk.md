@@ -1,5 +1,5 @@
 ---
-title: "Installing the .NET SDK"
+title: "Installing the .NET Core SDK"
 date: 2019-09-16T13:04:55-04:00
 draft: false
 ---
@@ -7,9 +7,10 @@ draft: false
 The first step is to download and install the `.NET Core SDK`. 
 This is the development kit for .NET that will be the engine for your application.
 
-> If you're familiar with Java, `.NET Core SDK` is similar to `Oracle JDK`, `OpenJDK`, or the other billion JDK variants.
+> If you're familiar with Java, `.NET Core SDK` is similar to `Oracle JDK`, `OpenJDK`, or the 
+> other billion JDK variants.
 
-## Download and Install on MacOS
+## MacOS
 
 ### Using Homebrew
 
