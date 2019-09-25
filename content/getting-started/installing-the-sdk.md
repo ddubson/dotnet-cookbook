@@ -20,6 +20,15 @@ Once you've downloaded and installed Homebrew, run the following command in your
 brew cask install dotnet-sdk
 ```
 
+#### Debugging Support
+
+To be able to run a debugger on your code, you have to install the Mono project, a cross-platform implementation 
+of the .NET Standard:
+
+```bash
+brew install mono
+```
+
 ### Downloading directly
 
 Navigate to <a href="https://dotnet.microsoft.com/download" target="_blank">Microsoft .NET Core downloads page</a> 
