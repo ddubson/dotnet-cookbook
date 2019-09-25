@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 theme = "hugo-theme-learn"
 title = ".NET Core Cookbook"
+
+[params]
+themeVariant = "blue"
