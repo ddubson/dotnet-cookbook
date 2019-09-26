@@ -2,6 +2,7 @@
 title: "Installing the .NET Core SDK"
 date: 2019-09-16T13:04:55-04:00
 draft: false
+weight: 2
 ---
 
 The first step is to download and install the `.NET Core SDK`. 

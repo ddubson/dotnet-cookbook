@@ -2,6 +2,7 @@
 title: "Brief History of Everything"
 date: 2019-09-25T09:02:55-04:00
 draft: false
+weight: 1
 ---
 
 ## .NET Standard

@@ -2,6 +2,7 @@
 title: "Choosing an IDE"
 date: 2019-09-25T16:20:28-04:00
 draft: false
+weight: 3
 ---
 
 There are quite a few options for Integrated Development Environments
