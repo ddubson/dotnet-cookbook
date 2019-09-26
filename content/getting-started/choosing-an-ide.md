@@ -19,7 +19,7 @@ Some of its features include:
 - Code style support for C#
 - Magnificent auto-complete functionality
 - Full debugging support (Mono)
-- Common test framework integrations
+- Common .NET Core test framework plugins
 
 You can download JetBrains Rider via:
 
