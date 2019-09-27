@@ -11,6 +11,14 @@ as well as manage your .NET Core solutions and projects ([read more here](./orga
 The following is a brief overview of some of the more important and most likely daily commands that you want to
 be familiar with.
 
+### Viewing list of templates
+
+Display a list of all solution and project templates that are available to generate a new solution or project.
+
+```bash
+dotnet new --list
+```
+
 ### Creating a solution 
 
 ```bash
