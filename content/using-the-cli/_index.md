@@ -19,6 +19,14 @@ Display a list of all solution and project templates that are available to gener
 dotnet new --list
 ```
 
+### Retrieve all dependencies of each project in a solution
+
+```bash
+dotnet restore
+```
+
+[more on restoring dependencies](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution)
+
 ### Creating a solution 
 
 ```bash

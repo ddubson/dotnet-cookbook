@@ -10,9 +10,9 @@ To keep it really simple, `.NET Core` code is divided into two bundling strategi
 
 **Projects** and **Solutions**
 
-A `project` is a set of bundled source code files.
+A `project` is a set of bundled source code files | defined by an `.csproj` file
 
-A `solution` is a collection of projects and acts as a mediator between the projects it holds.
+A `solution` is a collection of projects and acts as a mediator between the projects it holds | defined by an `.sln` file
 
 > It is important to note that you keep your tests separate from your actual production code.
 
