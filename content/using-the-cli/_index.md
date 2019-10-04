@@ -2,7 +2,7 @@
 title: "Using the .NET Core CLI"
 date: 2019-09-26T13:11:52-04:00
 draft: false
-weight: 99
+weight: 98
 ---
 
 .NET Core CLI allows you to interact with the .NET Core runtime

@@ -5,6 +5,25 @@ draft: false
 weight: 1
 ---
 
+## Prepare your machine
+
+On a MacOs, to prepare your machine to be ready for .NET Core development, go get a really
+great tool from Pivotal: [Workstation Setup](https://github.com/pivotal/workstation-setup)
+
+```bash
+git clone https://github.com/pivotal/workstation-setup
+cd workstation-setup
+chmod +x setup.sh
+
+# Run the script that specifically downloads dotnet dependencies alongside common tooling
+./setup.sh dotnet
+```
+
+{{% notice tip %}}
+If you'd like a leaner install, refer [Installing the .NET Core SDK](/getting-started/installing-the-sdk)
+section to get started.
+{{% /notice %}}
+
 ## Creating a Solution
 
 To create a new solution, use the .NET Core CLI to generate it:
