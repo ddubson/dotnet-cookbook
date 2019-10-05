@@ -5,3 +5,6 @@ title = ".NET Core Cookbook"
 
 [params]
 themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
