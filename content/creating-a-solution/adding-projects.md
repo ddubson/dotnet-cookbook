@@ -18,6 +18,11 @@ A project is defined by a `*.csproj` file, which is the project descriptor file.
 
 In this section, we will create a .NET Core Web API project and a .NET Core xUnit project. 
 
+e.g.
+```mermaid
+graph RL;
+    id2("<b>GoodProduct.API.Tests</b><br/>(.NET Core xUnit)")-->id1("<b>GoodProduct.API</b><br/>(.NET Core Web API)");
+```
 The Web API source project is the project where our API related code will live (i.e. controllers, etc.). 
 
 The xUnit project is the project where our test code for the API project will live.
