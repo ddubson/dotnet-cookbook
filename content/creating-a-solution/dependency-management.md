@@ -40,7 +40,16 @@ An example of external packages that a project uses within the project's `csproj
 </ItemGroup>
 ```
 
-### Adding project dependencies within the Solution
+#### Fetching dependencies
+
+When you clone a fresh copy of the codebase, or if you pull in new changes from Git that involve
+added dependencies, you will want to **restore** (aka fetch) dependencies on your local development machine.
+
+```bash
+dotnet restore
+```
+
+### Adding project dependencies within a Solution
 
 If you want to add a reference of one project to another, in the case of
 needing to use the resources of another project, you can do so:

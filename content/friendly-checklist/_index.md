@@ -12,3 +12,9 @@ weight: 99
 - [Organizing Code](/getting-started/organizing-code)
 - [Creating a Solution](/creating-a-solution/starting-from-scratch)
 - [Creating Projects](/creating-a-solution/adding-projects)
+
+## Operations Manual
+
+- [Restore (fetch) dependencies](/creating-a-solution/dependency-management#fetch-dependencies)
+- [Adding an external dependency to a project](/creating-a-solution/dependency-management#adding-a-dependency-to-a-project)
+- [Adding a reference from one project to another](/creating-a-solution/dependency-management#adding-project-dependencies-within-a-solution)
