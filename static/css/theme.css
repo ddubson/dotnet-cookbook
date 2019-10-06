@@ -569,6 +569,7 @@ div.notices p {
     font-size: 1rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
+    border-radius: 0.6rem;
     color: #666;
 }
 
@@ -591,6 +592,7 @@ div.notices p:first-child:after {
 div.notices.info p {
     border-top: 30px solid #F0B37E;
     background: #FFF2DB;
+    border-radius: 0.6rem;
 }
 
 div.notices.info p:first-child:after {
@@ -600,6 +602,7 @@ div.notices.info p:first-child:after {
 div.notices.warning p {
     border-top: 30px solid rgba(217, 83, 79, 0.8);
     background: #FAE2E2;
+    border-radius: 0.6rem;
 }
 
 div.notices.warning p:first-child:after {
@@ -609,6 +612,7 @@ div.notices.warning p:first-child:after {
 div.notices.note p {
     border-top: 30px solid #6AB0DE;
     background: #E7F2FA;
+    border-radius: 0.6rem;
 }
 
 div.notices.note p:first-child:after {
