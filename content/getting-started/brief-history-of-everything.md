@@ -5,10 +5,21 @@ draft: false
 weight: 1
 ---
 
+## .NET Core
+
+.NET Core was introduced in 2014 as a response to the issue of a lack of unified framework contracts that can
+be implemented across different platforms and devices, such as Windows Desktop, ASP.NET. Before .NET Core, each 
+framework and platform was managed independently, with different release cadences, different supported platforms, etc.
+
+Read more about .NET Core's origins -> [Introducing .NET Core](https://devblogs.microsoft.com/dotnet/introducing-net-core/)
+
 ## .NET Standard
 
-The .NET Standard is a unified collection of specifications that are tailored to have cross-platform implementations 
-as described above. This allows us to use the same stack to develop for many different operating systems and devices.
+The .NET Standard was introduced in 2016 as a unified collection of specifications that are tailored to have 
+cross-platform implementations as described above. This allows us to use the same stack to develop for many 
+different operating systems and devices.
+
+Read more about .NET Standard's origins -> [Introducing .NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/)
 
 ![.NET Standard overview](/images/NET-standard.png)
 

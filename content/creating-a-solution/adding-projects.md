@@ -1,5 +1,5 @@
 ---
-title: "Adding Projects"
+title: "Adding projects"
 date: 2019-09-27T16:33:06-04:00
 draft: false
 weight: 2

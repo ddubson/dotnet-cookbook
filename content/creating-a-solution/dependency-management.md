@@ -1,5 +1,5 @@
 ---
-title: "Dependency Management"
+title: "Dependency management"
 date: 2019-09-30T12:40:17-04:00
 draft: false
 weight: 3

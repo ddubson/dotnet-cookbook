@@ -5,6 +5,7 @@ title = ".NET Core Cookbook"
 
 [params]
 themeVariant = "blue"
+disableInlineCopyToClipBoard = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
