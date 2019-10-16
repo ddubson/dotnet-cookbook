@@ -1,8 +1,8 @@
 ---
 title: "Initial program structure"
 date: 2019-10-06T13:06:31-04:00
-draft: true
-weight: 6
+draft: false
+weight: 3
 ---
 
 Here's a brief overview of the initial structure of each project that
@@ -35,10 +35,18 @@ you can specify a specific profile to run in, and each profile can have its own 
 the run command executes the profile with the name of the project, but you can specify your own.
 3. `appsettings.json` and `appsettings.Development.json` are project environment settings used to store environment
 variables for the application. Analogous in Spring Boot/Java are `application.yml` files. The convention for each file
-is `appsettings.<environment-name>.json`, where Development is a built-in environment in .NET Core. Development and Production
-are built-in, but you can create your own by injecting `ASPNETCORE_Environment` variable into the runtime, via profiles
-in `launchSettings.json`, or within your system environment (e.g. `export ASPNETCORE_Environment=Acceptance`)
+is `appsettings.<environment-name>.json`, where <environment-name> is a built-in environment in .NET Core. Development 
+and Production are built-in, but you can create your own by injecting `ASPNETCORE_Environment` variable into the 
+runtime, via profiles in `launchSettings.json`, or within your system environment 
+(e.g. `export ASPNETCORE_Environment=Acceptance`)
+4. `appsettings.json` is a universal application settings file. All environment variables defined here will apply to
+all environments. Add environment variables that are universal across all environments.
+5. `Program.cs` is the main entry point of the application which contains the `main` function. Every C# deployable
+project as a `main` method.
+6. `Startup.cs` is the main service and configuration definition file. This is where the Dependency Injection container
+is managed. The class within the file is read by the internal web host managed by .NET Core.
 
+---
 
 ## xUnit Project
 
@@ -50,3 +58,5 @@ Directory structure for an `xunit` project:
     - obj/ (git ignored directory)
     - [xUnit Project].Tests.csproj
 ```
+
+xUnit projects are empty .NET Core projects that come packaged with xUnit framework and test runner.

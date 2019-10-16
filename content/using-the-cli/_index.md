@@ -6,7 +6,7 @@ weight: 98
 ---
 
 .NET Core CLI allows you to interact with the .NET Core runtime
-as well as manage your .NET Core solutions and projects ([read more here](./organizing-code.md))
+as well as manage your .NET Core solutions and projects ([read more here](/getting-started/organizing-code))
 
 The following is a brief overview of some of the more important and most likely daily commands that you want to
 be familiar with.

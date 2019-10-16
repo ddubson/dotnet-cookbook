@@ -14,8 +14,6 @@ A `project`, which is a set of bundled source code files | defined by an `.cspro
 
 A `solution`, which is a collection of projects and acts as a mediator between the projects it holds | defined by an `.sln` file
 
-> It is important to note that you keep your tests separate from your actual production code.
-
 Here's a visual example:
 
 ```markdown
