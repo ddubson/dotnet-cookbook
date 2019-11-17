@@ -27,7 +27,7 @@ dotnet restore
 
 [more on restoring dependencies](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution)
 
-### Creating a solution 
+### Creating a solution
 
 ```bash
 # Basic invocation
