@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://dotnet-cookbook.dmitriydubson.com"
 languageCode = "en-us"
 theme = "hugo-theme-learn"
 title = ".NET Core Cookbook"
