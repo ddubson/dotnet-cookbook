@@ -7,6 +7,16 @@ tags: ["pivotal platform", "deploy", "cloud foundry", "publishing"]
 
 To deploy to Pivotal Platform, a few steps have to be taken as described below.
 
+## Steps at a glance
+
+```mermaid
+graph LR;
+    id1(Install CloudFoundry CLI)-->id2(Build and package your application)
+    id2-->id3(Create a CF manifest)
+    id3-->id4(Log in to a CF API)
+    id4-->id5(Push your application)
+```
+
 ## Download and install the CloudFoundry CLI
 
 On MacOS, the simplest way to get the CLI is via Homebrew:
@@ -24,14 +34,14 @@ Before we can deploy to Pivotal Platform, we'll have to build and package our ap
 Here's an opinionated example of doing so:
 
 ```bash
-dotnet publish ./path/to/your/myproject.csproj --configuration Release 
+dotnet publish ./path/to/your/myproject.csproj --configuration Release
 
 # e.g.
 dotnet publish ./src/GoodProduct.API/GoodProduct.API.csproj --configuration Release
 ```
 
 {{% notice info %}}
-The `--configuration Release` flag describes type of configuration to enable in .NET. Read more about the `publish` 
+The `--configuration Release` flag describes type of configuration to enable in .NET. Read more about the `publish`
 command and configurations [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish)
 {{% /notice %}}
 
@@ -46,7 +56,7 @@ e.g.
 
 ## Create a CF Manifest
 
-Pivotal Platform uses manifest files to understand what type of application you are deploying and what the 
+Pivotal Platform uses manifest files to understand what type of application you are deploying and what the
 parameters are for when the application is deployed (such as allocated memory and disk space).
 
 In addition, Pivotal Platform relies on a concept of a buildpack to construct a relevant environment in the cloud
@@ -76,7 +86,7 @@ applications:
 Quick breakdown of each field in the example manifest:
 
 - `name` - describes the name of your application. This will be the name of the application in Pivotal Platform
-- `path` - the path to your compiled artifacts directory. For .NET Core 3.0, this path is likely to be 
+- `path` - the path to your compiled artifacts directory. For .NET Core 3.0, this path is likely to be
 `bin/Release/netcoreapp3.0/publish`. **Important to note that this path is relative to the manifest file location**.
 - `memory` - descriptor of how much RAM to allocate to the container running your application in the cloud
 - `disk_quota` - descriptor of how much disk space to allocate to the container running your application in the cloud
@@ -86,7 +96,7 @@ DO NOT use this for passwords or any other type of secrets.
 
 ## Log in to a CF API
 
-In order to deploy applications to Pivotal Platform, we'll need a place to deploy them to. 
+In order to deploy applications to Pivotal Platform, we'll need a place to deploy them to.
 
 In this example, I'll be using an account on Pivotal Web Services that I have created. To create your own,
 go to [Pivotal Web Services](https://run.pivotal.io)
@@ -117,5 +127,5 @@ cf push -f manifest.yml
 
 ---
 
-If you're **stuck** (read: something isn't going right with this process), take a look at the 
+If you're **stuck** (read: something isn't going right with this process), take a look at the
 [example project](https://github.com/ddubson/GoodProduct/blob/master/manifest.yml).
