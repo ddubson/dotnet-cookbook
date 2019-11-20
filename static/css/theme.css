@@ -4,6 +4,12 @@
 @import "tags.css";
 @import "fonts.css";
 
+body {
+    font-family: "OpenSansRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
 #top-github-link, #body #breadcrumbs {
     position: relative;
     top: 50%;
@@ -190,6 +196,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 
 #sidebar {
+    font-family: "OpenSansLight", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     background-color: #322A38;
     position: fixed;
     top: 0;
@@ -521,12 +528,6 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 
 #footer p {
     margin: 0;
-}
-
-body {
-    font-family: "OpenSansLight", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    line-height: 1.7;
-    font-size: 14px;
 }
 
 h2, h3, h4, h5, h6 {
