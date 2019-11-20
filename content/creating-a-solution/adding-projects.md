@@ -5,8 +5,9 @@ draft: false
 weight: 2
 ---
 
-Once you've created a [Solution](/creating-a-solution/starting-from-scratch), you can add projects to it, 
-following the organizational structure described in [Organizing Code](/getting-started/organizing-code) section.
+Once you've created a [Solution](/creating-a-solution/starting-from-scratch),
+you can add projects to it, following the organizational structure described in
+[Organizing Code](/getting-started/organizing-code) section.
 
 {{% notice tip %}}
 Source and test projects are separated into their own respective directories
@@ -16,19 +17,21 @@ A project is defined by a `*.csproj` file, which is the project descriptor file.
 
 ## Creating a Web API
 
-In this section, we will create a .NET Core Web API project and a .NET Core xUnit project. 
+In this section, we will create a .NET Core Web API project and a .NET Core xUnit project.
 
 e.g.
-```mermaid
+
+{{<mermaid>}}
 graph RL;
     id2("<b>GoodProduct.API.Tests</b><br/>(.NET Core xUnit)")-->id1("<b>GoodProduct.API</b><br/>(.NET Core Web API)");
-```
-The Web API source project is the project where our API related code will live (i.e. controllers, etc.). 
+{{</mermaid>}}
+
+The Web API source project is the project where our API related code will live (i.e. controllers, etc.).
 
 The xUnit project is the project where our test code for the API project will live.
 
 {{% notice note %}}
-xUnit is a popular test framework from Microsoft and maintained as an open source project by the .NET Foundation. 
+xUnit is a popular test framework from Microsoft and maintained as an open source project by the .NET Foundation.
 [More here](https://xunit.net/)
 {{% /notice %}}
 
@@ -51,7 +54,7 @@ each project's lifecycle, from running, building, and publishing.
 
 {{% notice note %}}
 The `Web API` part is just a template for a specific project purpose. In this case, .NET Core CLI creates a base
-.NET Core project with a web server ready to service API requests. 
+.NET Core project with a web server ready to service API requests.
 [View a list of available templates with this command](/using-the-cli/#viewing-list-of-templates)
 {{% /notice %}}
 

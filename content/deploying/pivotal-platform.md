@@ -9,13 +9,13 @@ To deploy to Pivotal Platform, a few steps have to be taken as described below.
 
 ## Steps at a glance
 
-```mermaid
+{{<mermaid>}}
 graph LR;
     id1(Install CloudFoundry CLI)-->id2(Build and package your application)
     id2-->id3(Create a CF manifest)
     id3-->id4(Log in to a CF API)
     id4-->id5(Push your application)
-```
+{{</mermaid>}}
 
 ## Download and install the CloudFoundry CLI
 
