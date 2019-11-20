@@ -1,38 +1,34 @@
 ---
-title: "Adding projects"
+title: "Adding a Web API project"
 date: 2019-09-27T16:33:06-04:00
 draft: false
 weight: 2
+tags: ["project", "webapi", "api", "xunit"]
 ---
 
-Once you've created a [Solution](/creating-a-solution/starting-from-scratch),
+Once you've created a [solution](/creating-a-solution/starting-from-scratch),
 you can add projects to it, following the organizational structure described in
 [Organizing Code](/getting-started/organizing-code) section.
 
-{{% notice tip %}}
-Source and test projects are separated into their own respective directories
-{{% /notice %}}
-
 A project is defined by a `*.csproj` file, which is the project descriptor file.
 
-## Creating a Web API
+## Creating a Web API project
 
-In this section, we will create a .NET Core Web API project and a .NET Core xUnit project.
-
-e.g.
+In this section, we will create a .NET Core Web API project and a complimentary
+.NET Core test project with xUnit test framework.
 
 {{<mermaid>}}
 graph RL;
     id2("<b>GoodProduct.API.Tests</b><br/>(.NET Core xUnit)")-->id1("<b>GoodProduct.API</b><br/>(.NET Core Web API)");
 {{</mermaid>}}
 
-The Web API source project is the project where our API related code will live (i.e. controllers, etc.).
+The Web API source project is the project where our API related code will live
+(i.e. controllers, etc.).
 
-The xUnit project is the project where our test code for the API project will live.
+The xUnit test project is the project where our test code for the API project will live.
 
 {{% notice note %}}
-xUnit is a popular test framework from Microsoft and maintained as an open source project by the .NET Foundation.
-[More here](https://xunit.net/)
+xUnit is a popular test framework from Microsoft and maintained as an open source project by the .NET Foundation. [More here](https://xunit.net/)
 {{% /notice %}}
 
 ### Source project
@@ -48,17 +44,23 @@ dotnet new webapi --name GoodProduct.API --output src/GoodProduct.API
 dotnet sln GoodProduct.sln add src/GoodProduct.API/GoodProduct.API.csproj
 ```
 
-These commands will create a Web API .NET Core project in `src/GoodProduct.API` directory and bind them
-to the root Solution. Binding a project (aka adding a reference) will ensure the root Solution can coordinate
+These commands will create a Web API .NET Core project in `src/GoodProduct.API`
+directory and bind them to the root Solution. Binding a project (aka adding a
+  reference) will ensure the root Solution can coordinate
 each project's lifecycle, from running, building, and publishing.
 
 {{% notice note %}}
-The `Web API` part is just a template for a specific project purpose. In this case, .NET Core CLI creates a base
+The `webapi` part is just a template for a specific project purpose.
+In this case, .NET Core CLI creates a base
 .NET Core project with a web server ready to service API requests.
 [View a list of available templates with this command](/using-the-cli/#viewing-list-of-templates)
 {{% /notice %}}
 
 ### Test project
+
+Source and test projects are separated into their own respective directories in
+the .NET world, so no test code will be packaged into an artifact at the publish (aka package)
+stage of the development lifecycle.
 
 ```bash
 # Create a .NET Core xUnit Project

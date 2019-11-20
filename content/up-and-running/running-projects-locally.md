@@ -5,7 +5,7 @@ draft: false
 weight: 1
 ---
 
-Once a Web API project is [added](/creating-a-solution/adding-projects),
+Once a deployable project is [added](/creating-a-solution/adding-webapi-project),
 you can run the project with .NET Core CLI
 
 ```shell script
@@ -18,4 +18,3 @@ dotnet run
 # e.g.
 dotnet run --project ./src/GoodProduct.API
 ```
-
