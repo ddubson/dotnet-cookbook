@@ -1,5 +1,5 @@
 ---
-title: "Using the .NET Core CLI"
+title: "⚙️ Using the .NET Core CLI"
 date: 2019-09-26T13:11:52-04:00
 draft: false
 weight: 98
