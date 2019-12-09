@@ -16,5 +16,5 @@ dotnet run --project ./src/[project-path]
 dotnet run
 
 # e.g.
-dotnet run --project ./src/GoodProduct.API
+dotnet run --project ./src/NeverendingTeaShop.API
 ```

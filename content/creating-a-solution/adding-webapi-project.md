@@ -19,7 +19,7 @@ In this section, we will create a .NET Core Web API project and a complimentary
 
 {{<mermaid>}}
 graph RL;
-    id2("<b>GoodProduct.API.Tests</b><br/>(.NET Core xUnit)")-->id1("<b>GoodProduct.API</b><br/>(.NET Core Web API)");
+    id2("<b>NeverendingTeaShop.API.Tests</b><br/>(.NET Core xUnit)")-->id1("<b>NeverendingTeaShop.API</b><br/>(.NET Core Web API)");
 {{</mermaid>}}
 
 The Web API source project is the project where our API related code will live
@@ -40,11 +40,11 @@ dotnet new webapi --name [name-of-project] --output [path-to-new-project-on-file
 dotnet sln [path-to-solution-file] add [path-to-api-project-csproj]
 
 # e.g.
-dotnet new webapi --name GoodProduct.API --output src/GoodProduct.API
-dotnet sln GoodProduct.sln add src/GoodProduct.API/GoodProduct.API.csproj
+dotnet new webapi --name NeverendingTeaShop.API --output src/NeverendingTeaShop.API
+dotnet sln NeverendingTeaShop.sln add src/NeverendingTeaShop.API/NeverendingTeaShop.API.csproj
 ```
 
-These commands will create a Web API .NET Core project in `src/GoodProduct.API`
+These commands will create a Web API .NET Core project in `src/NeverendingTeaShop.API`
 directory and bind them to the root Solution. Binding a project (aka adding a
   reference) will ensure the root Solution can coordinate
 each project's lifecycle, from running, building, and publishing.
@@ -71,9 +71,9 @@ dotnet sln [path-to-solution-file] add [path-to-test-project-csproj]
 dotnet add [path-to-test-project-csproj] reference [path-to-source-project-csproj]
 
 # e.g.
-dotnet new xunit --name GoodProduct.API.Tests --output src/GoodProduct.API.Tests
-dotnet sln GoodProduct.sln add src/GoodProduct.API.Tests/GoodProduct.API.Tests.csproj
-dotnet add tests/GoodProduct.API.Tests/GoodProduct.API.Tests.csproj reference src/GoodProduct.API/GoodProduct.API.csproj
+dotnet new xunit --name NeverendingTeaShop.API.Tests --output src/NeverendingTeaShop.API.Tests
+dotnet sln NeverendingTeaShop.sln add src/NeverendingTeaShop.API.Tests/NeverendingTeaShop.API.Tests.csproj
+dotnet add tests/NeverendingTeaShop.API.Tests/NeverendingTeaShop.API.Tests.csproj reference src/NeverendingTeaShop.API/NeverendingTeaShop.API.csproj
 
 ```
 

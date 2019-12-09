@@ -32,7 +32,7 @@ To create a new solution, use the .NET Core CLI to generate it:
 dotnet new sln --name [name-of-your-solution] --output [path-to-new-solution-on-file-system]
 
 # E.g.
-dotnet new sln --name GoodProduct --output GoodProduct/
+dotnet new sln --name NeverendingTeaShop --output NeverendingTeaShop/
 ```
 
 This command creates a new folder in the directory where you ran the command with the given name that was passed in

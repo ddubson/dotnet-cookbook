@@ -8,7 +8,7 @@ Below is an example of a simple build and test workflow for TravisCI.
 To enable TravisCI, add a `.travis.yml` file in the solution root directory with the
 following contents:
 
-```yaml
+{{<highlight yml>}}
 language: csharp
 dist: xenial
 addons:
@@ -18,12 +18,12 @@ addons:
       channel: latest/beta
 sudo: required
 mono: none
-solution: <solution-name>.sln
+solution: [solution-name].sln
 script:
   - sudo snap alias dotnet-sdk.dotnet dotnet
-  - dotnet test tests/<your-test-project>
-  - dotnet test tests/<your-other-test-project>
-```
+  - dotnet test tests/[your-test-project]
+  - dotnet test tests/[your-other-test-project]
+{{</highlight>}}
 
 {{% notice info %}}
 There is currently a bug within TravisCI that will not allow `dotnet test`
@@ -33,6 +33,6 @@ current workaround is to explicitly call `dotnet test` on specific test projects
 
 {{% notice warning %}}
 The above TravisCI excerpt is subject to change as .NET Core 3.x is adopted
-widely and some quirks in TravisCI configuration are removed and configuration is 
+widely and some quirks in TravisCI configuration are removed and configuration is
 simplified as time goes by.
 {{% /notice %}}

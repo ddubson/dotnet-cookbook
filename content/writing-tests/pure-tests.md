@@ -8,24 +8,27 @@ weight: 1
 Pure unit tests are simple unit test cases in which "pure" functions are
 tested.
 
-Pure functions are those that do not contain any "side effects" and map the same
-input to the same output no matter how many times they are invoked.
+Pure functions are those that:
+
+- Do not contain any ["side effects"](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+- Map the same input to the same output no matter how many times they are
+invoked.
 
 Here's an example of a simple test of a tax calculator function:
 
 {{<highlight csharp>}}
 using FluentAssertions;
 using Xunit;
-using static GoodProduct.Application.ProductPriceCalculator;
+using static NeverendingTeaShop.Application.TeaPriceCalculator;
 
-namespace GoodProduct.Application.Tests
+namespace NeverendingTeaShop.Application.Tests
 {
-    public class ProductPriceCalculatorTest
+    public class TeaPriceCalculatorTest
     {
         [Fact]
-        public void CalculateTax_GivenARetailPrice_ReturnsFullPriceWithTaxApplied()
+        public void CalculateTaxedPrice_GivenARetailPrice_ReturnsFullPriceWithTaxApplied()
         {
-            CalculateTax(19.99).Should().Be(21.74);
+            CalculateTaxedPrice(19.99).Should().Be(21.74);
         }
     }
 }

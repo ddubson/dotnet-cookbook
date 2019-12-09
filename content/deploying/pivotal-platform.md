@@ -37,7 +37,7 @@ Here's an opinionated example of doing so:
 dotnet publish ./path/to/your/myproject.csproj --configuration Release
 
 # e.g.
-dotnet publish ./src/GoodProduct.API/GoodProduct.API.csproj --configuration Release
+dotnet publish ./src/NeverendingTeaShop.API/NeverendingTeaShop.API.csproj --configuration Release
 ```
 
 {{% notice info %}}
@@ -51,7 +51,7 @@ The `publish` command should now have created a directory structure in the proje
 myproject/bin/Release/netcoreapp3.0/publish
 
 e.g.
-./GoodProduct/src/GoodProduct.API/bin/Release/netcoreapp3.0/publish
+./NeverendingTeaShop/src/NeverendingTeaShop.API/bin/Release/netcoreapp3.0/publish
 ```
 
 ## Create a CF Manifest
@@ -72,8 +72,8 @@ Here's an example manifest file:
 
 ---
 applications:
-  - name: GoodProductAPI
-    path: src/GoodProduct.API/bin/Release/netcoreapp3.0/publish
+  - name: NeverendingTeaShopAPI
+    path: src/NeverendingTeaShop.API/bin/Release/netcoreapp3.0/publish
     memory: 1G
     disk_quota: 512M
     env:
@@ -128,4 +128,4 @@ cf push -f manifest.yml
 ---
 
 If you're **stuck** (read: something isn't going right with this process), take a look at the
-[example project](https://github.com/ddubson/GoodProduct/blob/master/manifest.yml).
+[example project](https://github.com/ddubson/NeverendingTeaShop/blob/master/manifest.yml).

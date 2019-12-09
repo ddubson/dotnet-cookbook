@@ -34,7 +34,7 @@ dotnet restore
 dotnet sln new --name [name-of-solution] --output [path-to-new-solution]
 
 # Example:
-dotnet new sln --name GoodProduct --output GoodProduct/
+dotnet new sln --name NeverendingTeaShop --output NeverendingTeaShop/
 ```
 
 ### Creating a project
@@ -44,8 +44,8 @@ dotnet new sln --name GoodProduct --output GoodProduct/
 dotnet new [template] --name [name-of-project] --output [path-to-new-project]
 
 # Example:
-dotnet new webapi --name GoodProduct.API --output ./src/GoodProduct.API
-dotnet new xunit --name GoodProduct.API.Tests --output ./tests/GoodProduct.API.Tests
+dotnet new webapi --name NeverendingTeaShop.API --output ./src/NeverendingTeaShop.API
+dotnet new xunit --name NeverendingTeaShop.API.Tests --output ./tests/NeverendingTeaShop.API.Tests
 ```
 
 ### Run a deployable project
@@ -55,5 +55,5 @@ dotnet new xunit --name GoodProduct.API.Tests --output ./tests/GoodProduct.API.T
 dotnet run [path-to-csproj]
 
 # Example
-dotnet run GoodProduct/src/GoodProduct.API
+dotnet run NeverendingTeaShop/src/NeverendingTeaShop.API
 ```

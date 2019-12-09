@@ -22,5 +22,5 @@ dotnet test [test-project-path]
 dotnet test
 
 # e.g.
-dotnet test tests/GoodProduct.API.Tests
+dotnet test tests/NeverendingTeaShop.API.Tests
 ```

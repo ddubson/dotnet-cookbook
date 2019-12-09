@@ -58,13 +58,13 @@ needing to use the resources of another project, you can do so:
 dotnet add [path-to-project] references [path-to-project-to-be-referenced]
 
 # e.g. add source project reference to a test project
-dotnet add tests/GoodProduct.API.Tests/GoodProduct.API.Tests.csproj reference src/GoodProduct.API/GoodProduct.API.csproj 
+dotnet add tests/NeverendingTeaShop.API.Tests/NeverendingTeaShop.API.Tests.csproj reference src/NeverendingTeaShop.API/NeverendingTeaShop.API.csproj 
 ```
 
 An example of a project reference that was created:
 
 ```xml
 <ItemGroup>
-    <ProjectReference Include="..\..\src\GoodProduct.API\GoodProduct.API.csproj" />
+    <ProjectReference Include="..\..\src\NeverendingTeaShop.API\NeverendingTeaShop.API.csproj" />
 </ItemGroup>
 ```
