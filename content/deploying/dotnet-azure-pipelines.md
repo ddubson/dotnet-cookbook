@@ -85,14 +85,3 @@ stages:
                   WebAppName: $(AzureWebAppServiceName)
                   Package: '$(System.ArtifactsDirectory)/myArtifacts'
 {{</highlight>}}
-
-## CloudFoundry deploy
-
-Below is an example release stage configuration, deploying to Pivotal Platform:
-
-> The screenshot assumes you've placed your artifacts into `drop` directory in
-> the PublishBuildArtifacts step
-
-![releases-pipeline-setup](/img/azure-releases-pipeline-example.png)
-
-[<i class='fab fa-github'></i> Repository with Azure Pipelines setup example](https://github.com/ddubson/pal-tracker-dotnet/blob/master/azure-pipelines.yml)
