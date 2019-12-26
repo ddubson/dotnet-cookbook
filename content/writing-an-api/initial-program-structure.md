@@ -3,11 +3,12 @@ title: "Initial program structure"
 date: 2019-10-06T13:06:31-04:00
 draft: false
 weight: 3
+tags: ['program structure', 'organizing code', 'project structure', 'api', 'webapi']
 ---
 
 Here's a brief overview of the initial structure of each project that
 was created. This section will illuminate how a C# program is structured
-in different contexts (Web API, xUnit)
+in the context of a Web API
 
 ## Web API Project
 
@@ -35,9 +36,9 @@ you can specify a specific profile to run in, and each profile can have its own 
 the run command executes the profile with the name of the project, but you can specify your own.
 3. `appsettings.json` and `appsettings.Development.json` are project environment settings used to store environment
 variables for the application. Analogous in Spring Boot/Java are `application.yml` files. The convention for each file
-is `appsettings.<environment-name>.json`, where <environment-name> is a built-in environment in .NET Core. Development 
-and Production are built-in, but you can create your own by injecting `ASPNETCORE_Environment` variable into the 
-runtime, via profiles in `launchSettings.json`, or within your system environment 
+is `appsettings.<environment-name>.json`, where <environment-name> is a built-in environment in .NET Core. Development
+and Production are built-in, but you can create your own by injecting `ASPNETCORE_Environment` variable into the
+runtime, via profiles in `launchSettings.json`, or within your system environment
 (e.g. `export ASPNETCORE_Environment=Acceptance`)
 4. `appsettings.json` is a universal application settings file. All environment variables defined here will apply to
 all environments. Add environment variables that are universal across all environments.
