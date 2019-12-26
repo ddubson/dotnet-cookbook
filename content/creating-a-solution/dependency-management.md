@@ -2,10 +2,10 @@
 title: "Dependency management"
 date: 2019-09-30T12:40:17-04:00
 draft: false
-weight: 3
+weight: 4
 ---
 
-Each project will need its own dependencies from external libraries or 
+Each project will need its own dependencies from external libraries or
 references to another project in the same solution.
 
 The packages that a project references are described in the project's `csproj` file.
@@ -19,14 +19,14 @@ You can find its [directory here](https://www.nuget.org/)
 
 #### Adding a dependency to a project
 
-Let's add a dependency to a project by using an example package `Newtonsoft.Json` which is a popular 
+Let's add a dependency to a project by using an example package `Newtonsoft.Json` which is a popular
 Json framework for .NET that is published in the central repository
 
 ```bash
 dotnet add package Newtonsoft.Json
 ```
 
-The previous command should be run within the project folder that you 
+The previous command should be run within the project folder that you
 want to add the dependency to.
 
 An example of external packages that a project uses within the project's `csproj` file
@@ -58,7 +58,7 @@ needing to use the resources of another project, you can do so:
 dotnet add [path-to-project] references [path-to-project-to-be-referenced]
 
 # e.g. add source project reference to a test project
-dotnet add tests/NeverendingTeaShop.API.Tests/NeverendingTeaShop.API.Tests.csproj reference src/NeverendingTeaShop.API/NeverendingTeaShop.API.csproj 
+dotnet add tests/NeverendingTeaShop.API.Tests/NeverendingTeaShop.API.Tests.csproj reference src/NeverendingTeaShop.API/NeverendingTeaShop.API.csproj
 ```
 
 An example of a project reference that was created:

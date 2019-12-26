@@ -11,7 +11,8 @@ weight: 99
 - [Installing the .NET Core SDK](/getting-started/installing-the-sdk)
 - [Organizing Code](/getting-started/organizing-code)
 - [Creating a Solution](/creating-a-solution/starting-from-scratch)
-- [Creating Projects](/creating-a-solution/adding-webapi-project)
+- [Creating a Web API project](/creating-a-solution/adding-webapi-project)
+- [Creating a library project](/creating-a-solution/adding-a-classlib)
 
 ## Operations Manual
 
