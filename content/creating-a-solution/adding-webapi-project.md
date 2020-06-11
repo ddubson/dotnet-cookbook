@@ -6,6 +6,15 @@ weight: 2
 tags: ["project", "webapi", "api", "xunit"]
 ---
 
+{{%expand "TL;DR"%}}
+```bash
+# Create a .NET Core Web API Project
+dotnet new webapi --name [name-of-project] --output [path-to-new-project-on-file-system]
+# Add project to the root Solution
+dotnet sln [path-to-solution-file] add [path-to-api-project-csproj]
+```
+{{%/expand%}}
+
 Once you've created a [solution](/creating-a-solution/starting-from-scratch),
 you can add projects to it, following the organizational structure described in
 [Organizing Code](/getting-started/organizing-code) section.

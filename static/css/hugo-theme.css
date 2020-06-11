@@ -9,6 +9,11 @@
   padding: 0 5px;
 }
 
+.expand-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #TableOfContents {
     font-size: 13px !important;
     max-height: 85vh;
@@ -51,10 +56,10 @@ body {
     height: 1px;
     width: 0%;
     background-color: #0082a7; /*#CE3B2F*/
-    -webkit-transition: width 0.5s ease;
+    /* -webkit-transition: width 0.5s ease;
     -moz-transition: width 0.5s ease;
     -ms-transition: width 0.5s ease;
-    transition: width 0.5s ease;
+    transition: width 0.5s ease; */
 }
 #body a.highlight:hover:after, #body a.highlight:focus:after {
     width: 100%;
@@ -100,9 +105,9 @@ body {
   background-image: none !important;
   border: 1px solid transparent !important;
   border-radius: 4px !important;
-  -webkit-transition: all 0.15s !important;
+  /* -webkit-transition: all 0.15s !important;
      -moz-transition: all 0.15s !important;
-          transition: all 0.15s !important;
+          transition: all 0.15s !important; */
 }
 .btn:focus {
   /*outline: thin dotted;
