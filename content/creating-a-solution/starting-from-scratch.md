@@ -12,7 +12,7 @@ dotnet new sln --name [name-of-your-solution] --output [path-to-new-solution-on-
 # Initialize the repo (once inside folder)
 git init
 # Fetch a standard C#/.NET .gitignore file
-curl https://gitignore.io/api/visualstudio > .gitignore
+curl https://www.toptal.com/developers/gitignore/api/visualstudio > .gitignore
 # Fetch a standard C#/.NET .editorconfig file
 curl https://gist.githubusercontent.com/ddubson/754257ef0b6037d2710b7750f0747ead/raw/513ef70ae856a4e5c30e5a4abd50c22c48d89d3f/.editorconfig > .editorconfig
 ```
@@ -67,7 +67,7 @@ tailored for .NET Core and C#.
 Simply run the following:
 
 ```bash
-curl https://gitignore.io/api/visualstudio > .gitignore
+curl https://www.toptal.com/developers/gitignore/api/visualstudio > .gitignore
 ```
 
 Alternatively, go to [gitignore.io](https://gitignore.io) and copy the `VisualStudio` ignore file and paste it into

@@ -57,3 +57,13 @@ dotnet run [path-to-csproj]
 # Example
 dotnet run NeverendingTeaShop/src/NeverendingTeaShop.API
 ```
+
+### Live reload changes when developing
+
+```bash
+# Watch a running application locally
+dotnet watch run
+
+# Watch tests
+dotnet watch test
+```
