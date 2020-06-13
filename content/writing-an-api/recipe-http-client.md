@@ -6,7 +6,7 @@ weight: 4
 tags: ['http', 'recipe']
 ---
 
-> This recipe is only if you are using JetBrains product as your IDE
+> This recipe is only if you are using a JetBrains product as your IDE
 
 When just starting out writing an API, you might write a little of the API code
 and test that the API works by placing a request via Postman or Insomnia HTTP
