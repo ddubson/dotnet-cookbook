@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "git submodule update --init --recursive --depth=1 && hugo --gc --minify --ignoreCache"
+command = "git submodule update --recursive --remote && hugo --gc --minify --ignoreCache"
 
 [context.production.environment]
 HUGO_VERSION = "0.72.0"
@@ -15,7 +15,7 @@ HUGO_VERSION = "0.72.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "git submodule update --recursive --remote && hugo --gc -b $DEPLOY_PRIME_URL --minify --ignoreCache"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.72.0"
