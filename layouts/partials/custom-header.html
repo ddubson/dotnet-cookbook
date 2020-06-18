@@ -1,0 +1,24 @@
+<style>
+#sidebar {
+  width: 350px;
+}
+
+#body {
+  margin-left: 350px;
+}
+
+@media only all and (max-width: 59.938em) {
+    #body {
+      margin-left: 0px;
+    }
+
+    #sidebar {
+      left: -350px;
+    }
+
+    .sidebar-hidden #body {
+        margin-left: 350px;
+        overflow: hidden;
+    }
+}
+</style>
