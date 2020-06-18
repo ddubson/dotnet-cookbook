@@ -3,6 +3,7 @@ title: "Pure Unit Tests"
 date: 2019-11-21T17:42:10-05:00
 draft: false
 weight: 1
+tags: ['unit', 'tests', 'fluent-assertions', 'xunit']
 ---
 
 Pure unit tests are simple unit test cases in which "pure" functions are
@@ -36,5 +37,5 @@ namespace NeverendingTeaShop.Application.Tests
 
 Frameworks in use to run this test are:
 
-- [Xunit (Test framework)](https://xunit.net/)
+- [xUnit (Test runner / assertion framework)](https://xunit.net/)
 - [FluentAssertions (Assertion framework)](https://fluentassertions.com/)

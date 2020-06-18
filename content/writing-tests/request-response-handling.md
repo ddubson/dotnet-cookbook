@@ -3,6 +3,7 @@ title: "Handling HTTP Request/Response bodies"
 date: 2020-06-18T12:34:29-04:00
 draft: false
 weight: 2
+tags: ['testing', 'http', 'requests', 'responses', 'serializing', 'deserializing']
 ---
 
 When working with functional (e.g. API) tests in your project, you might be in
