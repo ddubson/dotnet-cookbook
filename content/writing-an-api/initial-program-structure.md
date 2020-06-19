@@ -2,7 +2,7 @@
 title: "Initial program structure"
 date: 2019-10-06T13:06:31-04:00
 draft: false
-weight: 3
+weight: 1
 tags: ['program structure', 'organizing code', 'project structure', 'api', 'webapi']
 ---
 

@@ -2,7 +2,7 @@
 title: "Saving HTTP requests"
 date: 2020-06-13T16:47:03-04:00
 draft: false
-weight: 4
+weight: 2
 tags: ['http', 'recipe']
 ---
 
