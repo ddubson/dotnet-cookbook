@@ -23,7 +23,11 @@ Let's add a dependency to a project by using an example package `Newtonsoft.Json
 Json framework for .NET that is published in the central repository
 
 ```bash
+# If inside the project directory
 dotnet add package Newtonsoft.Json
+
+# If in root directory of a multi-project solution
+dotnet add <path-to-project> package Newtonsoft.Json
 ```
 
 The previous command should be run within the project folder that you

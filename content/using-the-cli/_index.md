@@ -67,3 +67,15 @@ dotnet watch run
 # Watch tests
 dotnet watch test
 ```
+
+### Adding a NuGET package to a project
+
+An example of adding `Serilog` nuget to a project
+
+```bash
+# If inside the project directory
+dotnet add package Serilog
+
+# If in root directory of a multi-project solution
+dotnet add <path-to-project> package Serilog
+```
